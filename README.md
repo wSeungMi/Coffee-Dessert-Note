@@ -1,46 +1,90 @@
-# Getting Started with Create React App
+# Coffee-Dessert-Note
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [설치 및 실행](#설치-및-실행)
+- [설계](#설계)
+- [기능](#기능)
+- [구현](#구현)
+- [트러블 슈팅](#트러블-슈팅)
 
-## Available Scripts
+## 설치 및 실행
 
-In the project directory, you can run:
+TBD
 
-### `npm start`
+## 설계
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 목표
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- `React`와 `Typescript`를 사용하여 **커피&디저트 기록노트** 만들기
+- CRUD 기능 구현해보기
 
-### `npm test`
+### 기술 스택
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| 분류      | 내용                           |
+| --------- | ------------------------------ |
+| Lang      | typescript                     |
+| Library   | React, Redux, React-query(api) |
+| CSS Style | Tailwind                       |
+| Storag    | LocalStorage                   |
+| API       | kakao map api                  |
 
-### `npm run build`
+### 공부 필요
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 1차 목표 : 프론트까지 구현
+- 2차 목표 : DB 사용(Firebase사용), 로그인 기능 업데이트
+- 사용법
+  - typescript
+  - Library (React, Redux, React-query)
+  - Emotion
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 조사 필요
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- api 사용법
 
-### `npm run eject`
+### 레이아웃
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<img src="https://user-images.githubusercontent.com/104605709/174498170-c0ec4b66-d3d0-4f65-99af-9333bea73379.jpg" width="600">
+<img src="https://user-images.githubusercontent.com/104605709/174498094-e122f0fd-20b6-4d5e-8908-29117c4db8c4.jpg" width="600">
+<img src="https://user-images.githubusercontent.com/104605709/174498183-a46bee22-a428-4093-b650-a14973024aff.jpg" width="600">
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 기능
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+\*로그인/사용자 정보 저장 X
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. header
 
-## Learn More
+- 홈 이동 버튼
+  - 로고를 누르면 어느 페이지에서든 메인 홈으로 이동
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. nav
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- 기록노트 목록
+  - 메인 홈으로 이동
+- 기록노트 작성
+  - 작성 페이지로 이동
+
+3. main
+
+- 기록노트 목록
+  - 폴더(커피, 케이크, 베이커리) 스타일로 목록 출력 (light/dark UI 고려)
+  - 폴더를 눌러 이동하면 입력된 내용을 보여줌(세로 스크롤)
+  - 내용을 클릭하면 상세페이지를 볼 수 있음
+  - 기록노트 수정, 삭제 기능
+- 기록노트 작성
+  - 입력할 내용
+  - 폴더 선택(커피, 케이크, 베이커리)
+  - 메뉴 이름
+  - 가게 이름(api 구현 가능하면 지도 검색해서 주소까지 입력, 안되면 상호명만 직접 입력)
+  - 맛 평가(아이콘으로 표현 / 5점 척도-1점(노맛), 2점(그냥그럼), 3점(추천가능), 4번(또먹고 싶음), 5점(인생최고의 맛)
+  - 가격
+  - 메모
+  - 사진추가
+
+## 구현
+
+TBD
+
+## 트러블 슈팅
+
+TBD
+
+##
