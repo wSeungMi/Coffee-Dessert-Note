@@ -34,7 +34,7 @@ TBD
 - 사용법
   - typescript
   - Library (React, Redux, React-query)
-  - Emotion
+  - Tailwind
 
 ### 조사 필요
 

@@ -1,10 +1,17 @@
 import React from 'react';
+import darkmode from '../assets/dark_mode.png';
 
 export default function Header() {
-    return (
-       <header className="flex items-left justify-left flex-wrap bg-white pb-7 border-b border-gray-100">
-         <span className="text-3xl tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-[#f0e600] via-[#fcd34d] to-[#f3ca00]">달콤</span>
-         <span className="text-3xl tracking-tight text-[#f7cd6a]">노트</span>
-       </header>
-    )
+  return (
+    <header className="mx-auto p-4 pt-4 sm:px-2 md:px-6">
+      <div className="flex flex-row items-center md:shrink-0 justify-between h-14 px-2">
+        <a href="/" className="flex-shrink-0 flex items-center">
+          <span className="text-2xl tracking-tight text-[#383838] font-bold">커피&디저트노트</span>
+        </a>
+      <nav className="flex flex-row items-end px-2">
+        <img src={darkmode} alt="darkmode" className="flex items-end h-8"></img>
+      </nav>
+      </div>
+    </header>
+  )
 }
