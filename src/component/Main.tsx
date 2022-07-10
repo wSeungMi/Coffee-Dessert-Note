@@ -9,7 +9,7 @@ export default function Main() {
    <main className="mx-auto mt-7 px-4 sm:px-6 md:px-6">
       <div className="flex items-center justify-between px-2 mb-10">
         <div className="flex flex-col items-left md:shrink-0">   
-          <span className="text-xs tracking-tight font-semibold text-neutral-400">22.06.29</span>
+          <span className="text-xs tracking-tight font-semibold text-neutral-400">22.00.00</span>
           <span className="text-2xl tracking-tight font-semibold text-[#fecb2e]">0</span>
         </div>
         <div className="flex flex-col items-center md:shrink-0"> 
